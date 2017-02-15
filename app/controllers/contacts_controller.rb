@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
     end
   end
   
-  # This is for privacy
+  # This is for privacy/security - called Strong Parameters
   private 
     def contact_params
       params.require(:contact).permit(:name, :email, :comments)
